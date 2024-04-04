@@ -1,0 +1,263 @@
+@media screen and (max-width: 750px) { 
+
+   /* navbar start */
+   body {
+        animation: yes 0s ease;
+   }
+   
+    header, 
+    section,
+    footer {
+        width: 100%;
+        overflow: hidden;
+        margin: 0 auto;
+        height: 100%;
+        padding: 10px;
+    }
+    .nav {
+        position: fixed;
+        background-color: #050505f1;
+        z-index: 99;
+        transform: translateY(-100%);
+        top: -1px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 5em;
+        transition: all 0.5s ease;
+    }
+   .nav a {
+        margin: 0;
+        display: block;
+        font-size: 30px;
+        text-transform: uppercase;
+   }
+   navbar {
+        margin-top: 2em;
+        padding: 20px;
+   }
+   navbar h1 {
+        font-weight: 300;
+   }
+   .burger {
+        position: fixed;
+        background-color: #ededed2c;
+        right: 25px;
+        z-index: 99;
+        display: block;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-left: 7em;
+        padding: 10px;
+   }
+   .burger div {
+        height: 4px;
+        width: 27px;
+        border-radius: 10px;
+        margin: 5px;
+        background-color: #ededed;
+        transition: all 0.3s ease;
+   }
+   .nav-active {
+       transform: translateY(-0%);
+       background-color: #2e2761f4;
+   }
+   .toggle .line-1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+   }
+   .toggle .line-2 {
+        opacity: 0;
+   }
+   .toggle .line-3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+   }
+     /* navbar end */
+
+     /* box1 start */
+   main {
+        margin-top: 3em;
+        flex-direction: column;
+        align-items: center;
+        justify-content: none;
+   }
+
+   .left_1 h1 {
+       animation: yes 2s ease;
+       line-height: normal;
+       width: 350px;
+       font-size: 70px;
+       margin: 0 auto; 
+       text-align: center;
+   }
+   @keyframes yes {    
+    0% {
+        filter: blur(40px);
+    }
+  }
+   .left_1 p {
+       margin-top: 1em;
+       width: auto;
+       text-align: center;
+   }
+   .right_1 img {
+       width: 100%;
+       margin-top: 1em;
+   }
+   .click_1 {
+       gap: 15px;
+       justify-content: center;
+       align-items: center;
+       margin-top: 2em;
+   }
+   .click_1 a {
+       font-size: 13px;
+       padding: 20px;
+       width: 160px;
+   }
+     /* box1 end */
+
+     /* box2 start */
+   .section_1 h3 {
+       text-align: center;
+   }
+   .logos {
+       flex-direction: column;
+       gap: 1.5em;
+       padding: 20px;
+       margin: 10px;
+   }
+      /* box2 end */
+      
+      /* box3 start */
+   .section_2 {
+       flex-direction: column;
+       gap: 10px;
+   }
+   .left_2 img {
+       width: 200px;
+   }
+   .left_2img img {
+       width: 200px;
+       margin: 1.5em;
+   }
+   .right {
+       margin: 0;
+       text-align: center;
+       justify-content: center;
+       align-items: center;
+   }
+   .right h1 {
+       font-size: 40px;
+       width: 350px;
+   }
+   .right p {
+       width: 350px;
+   }
+    /* box3 end */
+
+     /* box4 start */
+   .box_3 {
+       height: 100%;
+   }
+   section .title {
+       margin-bottom: 2em;
+   }
+   section .title h1 {
+       width: 350px;
+       font-size: 45px;
+   }
+   .icon {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   }
+   .icon i {
+       display: inline-block;
+       text-align: center;
+       font-size: 30px;
+       margin-bottom: 20px;
+       color: #ededed5a;
+       animation: icon 3s infinite;
+   }
+   @keyframes icon {
+    0% {
+       color:#ededed5a;
+    }
+    50% {
+       color: #fff;
+    }
+    100% {
+        color:#ededed5a;
+    }
+   }
+   .cards ul {
+       scroll-behavior: smooth;
+       padding: 4em 1em 2em;
+       overflow-x: scroll;
+       flex-direction: row;
+       justify-content: start;
+       align-items: center;
+       gap: 2em; 
+   }
+   .cards li {
+       height: 230px;
+   }
+   .cards li img {
+       width: 100px;
+       bottom: 3.5em;
+   }
+   ul li .comment {
+       bottom: 3em;
+   }
+    /* box4 end */
+    
+    /* box5 start */
+   section .get {
+       margin: 3em 1em 1em;
+       height: 350px;
+   }
+   section .get h5 {
+       font-size: 15px;
+   }
+   section .get h1 {
+       width: 320px;
+       font-size: 35px;
+   }
+   section .get button {
+       width: 80%;
+   }
+   section .get button a {
+       font-size: 15px;
+   }
+    /* box5 end */
+
+   footer {
+       flex-direction: column;
+       align-items: center;
+       margin-top: 2em;
+   }
+   footer
+   .foo ul {
+       display: flex;
+       margin-top: 1em;
+   }
+   .foo li .active {
+       position: static;
+   }
+   .foo li {
+       margin: 10px;
+       font-size: 15px;
+   }
+   .input_btn {
+       margin: 15px 0 6em;
+      
+   }
+   .foo h3 {
+       margin-top: 2em;
+       text-align: center;
+   }
+}
